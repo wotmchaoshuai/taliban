@@ -1,0 +1,200 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    background-color: gainsboro;
+    user-select: none;
+}
+
+.header {
+    text-align: center;
+    background-image: url(/image/header.jpg);
+    height: 10vh;
+}
+
+.headertext {
+    line-height: 10vh;
+    font-size: 5vh;
+    font-weight: bold;
+    background: url(/image/headertext.png)no-repeat center center;
+    background-size: cover;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: tomato;
+    -webkit-text-fill-color: transparent;
+    transition: 0.5s linear;
+}
+
+.header .headertext:hover {
+    opacity: 1;
+}
+
+.header .hleft {
+    background: url(/image/hleft.png)no-repeat;
+    background-size: 30%;
+    background-position: center;
+    height: 10vh;
+    width: 10vh;
+    float: left;
+}
+
+.header a {
+    display: inline-block;
+    height: 10vh;
+    width: 10vh;
+}
+
+.header .hright {
+    background: url(/image/hright.png) no-repeat;
+    background-size: 60%;
+    background-position: center;
+    height: 10vh;
+    width: 10vh;
+    float: right;
+}
+
+.content1 {
+    background-color: black;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.contentll {
+    padding: 4vh 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 17vh;
+    background-color: #36404a;
+    overflow: hidden;
+}
+
+.contentll span {
+    bottom: 10vh;
+    align-items: none;
+    position: absolute;
+    font-size: 18vw;
+    font-weight: bold;
+    color: white;
+    transition: 0.7s linear;
+}
+
+.contentll .text {
+    font: 15px Poppins, sans-serif;
+    color: #8691a0;
+    text-align: center;
+    opacity: 0;
+    transition: 0.5s linear;
+    line-height: 4vh;
+}
+
+span:nth-child(2) {
+    -webkit-clip-path: polygon(0 0, 0% 100%, 100% 100%);
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+}
+
+.contentll span:nth-child(3) {
+    color: cornflowerblue;
+    -webkit-clip-path: polygon(100% 0, 0 0, 100% 100%);
+    clip-path: polygon(100% 0, 0 0, 100% 100%);
+}
+
+.contentll span:nth-child(1) {
+    text-align: center;
+    line-height: 4vh;
+    border-radius: 7px;
+    width: 13vh;
+    height: 4vh;
+    background-color: #be7f02;
+    font-weight: none;
+    font-size: 5vw;
+    color: black;
+    z-index: 1;
+    bottom: 4.5vh;
+    transition: 0.2s linear;
+}
+
+span:nth-child(1):hover~span:nth-child(2) {
+    transform: translate(-200%, 50%) rotateZ(1deg);
+}
+
+span:nth-child(1):hover~span:nth-child(3) {
+    transform: translate(200%, -50%) rotateZ(1deg);
+}
+
+span:nth-child(1):hover {
+    opacity: 0;
+}
+
+span:nth-child(1):hover~.text {
+    opacity: 1;
+}
+
+.content2 {
+    display: flex;
+    background-color: chocolate;
+    background: url(/image/content2iimg.png) no-repeat center;
+    background-size: cover;
+    height: 35vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.content2 .money {
+    border-radius: 15px;
+    padding: 1vh 4vh;
+    border: 1px solid black;
+    width: 55%;
+    height: 75%;
+    margin: 0 auto;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, .6), rgba(255, 255, 255, .3), rgba(255, 255, 255, .2));
+    backdrop-filter: blur(2px);
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, .8);
+    border-left: 1px solid rgba(255, 255, 255, .8);
+}
+
+.content2 .money ul .m1 {
+    text-align: center;
+    margin-bottom: 2vh;
+    font: 900 25px '';
+    color: rgba(0, 0, 0, .5);
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, .7);
+}
+
+.content2 .money ul li {
+    white-space: nowrap;
+    margin: 0.5vh 0;
+    padding-left: 20px;
+    background: url(/image/content2ico.png) left center no-repeat;
+}
+
+.content2 .money ul li a {
+    font-size: 13px;
+    color: rgba(255, 255, 255, .5);
+}
+
+.end {
+    border-top: 1px dashed white;
+    padding-top: 2vh;
+    background-color: cornflowerblue;
+    height: 10vh;
+    font-size: 13px;
+    color: white;
+    text-align: center;
+    line-height: 3vh;
+}
