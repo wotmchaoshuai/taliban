@@ -169,6 +169,7 @@ span:nth-child(1):hover~.text {
 }
 
 .content2 .money ul .m1 {
+    background: none;
     text-align: center;
     margin-bottom: 2vh;
     font: 900 25px '';
