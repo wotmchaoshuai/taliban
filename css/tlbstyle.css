@@ -13,14 +13,33 @@ li {
 }
 
 body {
-    background-color: gainsboro;
     user-select: none;
+    background: url(https://pic4.zhimg.com/v2-0a6beb82d8d7b679375183c56c0b7eb3_r.jpg)no-repeat center center;
+    background-size: cover;
+}
+
+@media screen and (min-width: 400px) {
+    .thetaliban {
+        width: 50vh;
+        height: 100%;
+        margin: 5vh auto;
+    }
 }
 
 .header {
     text-align: center;
     background-image: url(https://pic3.zhimg.com/v2-627244e1f0edff820362aaea1a214a86_r.jpg);
     height: 10vh;
+}
+
+@media screen and (min-width: 400px) {
+    .header {
+        text-align: center;
+        background-image: url(https://pic3.zhimg.com/v2-627244e1f0edff820362aaea1a214a86_r.jpg);
+        height: 10vh;
+        border-top-left-radius: 5vh;
+        border-top-right-radius: 5vh;
+    }
 }
 
 .headertext {
@@ -87,7 +106,7 @@ body {
     bottom: 10vh;
     align-items: none;
     position: absolute;
-    font-size: 18vw;
+    font-size: 10vh;
     font-weight: bold;
     color: white;
     transition: 0.7s linear;
@@ -121,7 +140,7 @@ span:nth-child(2) {
     height: 4vh;
     background-color: #be7f02;
     font-weight: none;
-    font-size: 5vw;
+    font-size: 2vh;
     color: black;
     z-index: 1;
     bottom: 4.5vh;
@@ -198,4 +217,19 @@ span:nth-child(1):hover~.text {
     color: white;
     text-align: center;
     line-height: 3vh;
+}
+
+@media screen and (min-width: 400px) {
+    .end {
+        border-top: 1px dashed white;
+        padding-top: 4vh;
+        background-color: cornflowerblue;
+        height: 13vh;
+        font-size: 13px;
+        color: white;
+        text-align: center;
+        line-height: 3vh;
+        border-bottom-left-radius: 5vh;
+        border-bottom-right-radius: 5vh;
+    }
 }
