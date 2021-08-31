@@ -84,17 +84,17 @@ body {
     border-radius: 3px;
     background-color: white;
     left: 30px;
-    top: 38px;
+    top: 5vh;
     pointer-events: none;
     transition: top 0.3s ease-in-out;
 }
 
 .header .hleft span:nth-child(2) {
-    top: 28px;
+    top: 3.8vh;
 }
 
 .header .hleft span:nth-child(4) {
-    top: 48px;
+    top: 6.2vh;
 }
 
 .header .hleft input:checked~span:nth-child(2) {
